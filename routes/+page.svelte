@@ -1,3 +1,154 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+
+import Nav from './Components/Nav.svelte';
+import Project from './Components/project.svelte';
+
+
+</script>
+
+  <style>
+
+    .bannerImg{
+      width:80vw;
+      height:50vw;
+    }
+    .cardImgs{
+      width:18.7vw;
+      height:40vw;
+    }
+
+    .svgTechnologies{
+      width:5vw;
+      height:2.5vw;
+    }
+
+    .midnightBlue{
+     color: #2D386C;
+    }
+    .bgMidnightBlue{
+      background-color:#2D386C ;
+    }
+    @media screen and (min-width: 1366px){
+
+      .cardImgs{
+        height:30vw;
+      }   
+    }
+
+  </style>
+  <div class="justify-center flex-row items-center bg-slate-950 mx-0 mt-0 pt-7">
+	<div class="pl-0 mx-20">
+	  <img src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/anne-sophie-benoit-JaNtL4uGvG8-unsplash.jpg" alt="Imagem" class="rounded-4xl bannerImg  duration-300 ease-in-out hover:scale-110 mb-7"/>
+	</div>
+	 
+  
+	 <div class="flex mx-5">
+	 
+	   
+	  <img class="rounded-2xl cardImgs object-cover -rotate-6 duration-300 ease-in-out z-2 hover:scale-120 hover:rotate-0 my-6 hover:z-3" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/s-alb-xYWMPwhQcDM-unsplash.jpg" alt="" />
+			
+  
+	  <img class="rounded-2xl cardImgs object-cover -rotate-3 duration-300 ease-in-out z-1 hover:scale-120 hover:rotate-0 my-6 hover:z-3" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/WhatsApp%20Image%202024-05-13%20at%2023.39.08.jpeg" alt="" />
+			   
+  
+	  <img class="rounded-2xl cardImgs object-cover duration-300 ease-in-out z-2 hover:scale-120 hover:rotate-0 my-6 hover:z-3" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/luca-bravo-WeFDiEDModQ-unsplash.jpg" alt="" />
+			 
+  
+	  <img class="rounded-2xl cardImgs object-cover rotate-3 duration-300 ease-in-out z-1 hover:scale-120 hover:rotate-0 my-6 hover:z-3" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/WhatsApp%20Image%202024-05-13%20at%2023.39.09.jpeg" alt="" />
+			   
+  
+	  <img class="rounded-2xl cardImgs object-cover rotate-6 duration-300 ease-in-out z-2 hover:scale-120 hover:rotate-0 my-6 hover:z-3" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/louis-gaudiau-jloWf465qgU-unsplash.jpg" alt="" />
+			  
+	 </div>
+	 <div class="mx-2">
+     <h1 class="text-white items-center justify-center text-center text-4xl my-10 p-5 bgMidnightBlue rounded-3xl " id="projects">My Projects</h1>
+
+     <div class="flex flex-row">
+        <div class="flex-row items-center justify-center mx-2.5">
+          <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm   dark:border-gray-700 dark:bg-gray-900">
+            <h2 class="text-white items-center justify-center text-center text-4xl my-3">FrontEnd</h2>
+
+
+            <a href="https://asafesseidon.github.io/DoctorCare/" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+				      <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/Captura%20de%20Tela%20(183).png" alt="">
+				      <div class="flex flex-col justify-between p-4 leading-normal">
+					      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DoctorCare</h5>
+					      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A site made in the programming event NLW Return, it's a site made to ease people access to proper health care.</p>
+                <div class="flex flex-row">
+                  <img src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor" class="svgTechnologies" alt="">
+                  <img class="svgTechnologies " src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor" alt="">
+                  <img class="svgTechnologies " src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor" alt="">
+                </div>
+				      </div>
+			      </a>
+  
+			   <a href="https://asafesseidon.github.io/MKJ-Enterprises/" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+				  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/Captura%20de%20Tela%20(184).png" alt="">
+				  <div class="flex flex-col justify-between p-4 leading-normal">
+					  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MKJ Enterprises</h5>
+					  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A collaborative site i made with two other people, João Gabriel Pereira Lopes and Erick de Castro, about an Enterprise that has two subsidiaries
+               one which works with a luthier work and other which works with cealing lowering.</p>
+            <div class="flex flex-row">
+              <img src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor" class="svgTechnologies" alt="">
+              <img class="svgTechnologies " src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor" alt="">
+            </div>
+            
+				  </div>
+			  </a>
+  
+			   <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+				  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="https://asafesseidon.github.io/Asafesseidon-s_Website/Files/Images/Captura%20de%20Tela%20(185).png" alt="">
+				  <div class="flex flex-col justify-between p-4 leading-normal">
+					  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hash Game</h5>
+					  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, suscipit. Modi consequuntur voluptates sapiente facere est eligendi repudiandae assumenda sint, harum vero soluta amet repellat tenetur ut, nemo molestias vitae!</p>
+            <div class="flex flex-row">
+              <img src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor" class="svgTechnologies" alt="">
+              <img class="svgTechnologies " src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor" alt="">
+              <img class="svgTechnologies " src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor" alt="">
+            </div>
+          </div>
+			  </a>
+          </div>
+  
+	  </div>
+  
+	 <div class="flex-row items-center justify-center mx-2.5">
+
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm   dark:border-gray-700 dark:bg-gray-900">
+        <h2 class="text-white items-center justify-center text-center text-4xl my-3">BackEnd</h2>
+
+        <a href="https://github.com/Asafesseidon/RocketseatAuctionAPI" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+				 
+				  <div class="flex flex-col justify-between p-4 leading-normal">
+					  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">RocketseatAuctionAPI</h5>
+					  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A C# API that realizes and organizes auctions with automated bidding based on the maximum value the participants want to bid, it was made with an SQLite database.</p>
+            <div class="flex flex-row">
+              <img src="https://icongr.am/devicon/csharp-original.svg?size=128&color=currentColor" class="svgTechnologies" alt="">
+            </div>
+				  </div>
+			  </a>
+  
+			   <a href="https://github.com/Asafesseidon/PassInAPI" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+				  
+				  <div class="flex flex-col justify-between p-4 leading-normal">
+					  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">PassInAPI</h5>
+					  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A C# API that organizes events, made using the SQLite database.</p>
+            <div class="flex flex-row">
+              <img src="https://icongr.am/devicon/csharp-original.svg?size=128&color=currentColor" class="svgTechnologies" alt="">
+            </div>
+				  </div>
+			  </a>
+  
+        </div>
+			  
+	 </div>
+     </div>
+    
+   </div>
+	 
+  
+	 <div>
+	   <h2 class="text-white">Random Projects</h2>
+	 </div>
+  
+  </div>
