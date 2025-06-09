@@ -1,4 +1,36 @@
-<script>
+<script lang="ts">
+ export let projectPath= "";
+ export let projectImgSrc= "";
+ export let projectTitle= "";
+ export let projectDescription= "";
+ export let svgSources= [];
+
+ function svgSorter(name){
+  switch (name) {
+    case "HTML":
+        return "https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor";
+  case "CSS":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg";
+  case "JS":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg";
+  case "NODE":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg";
+  case "EXPRESS":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg";
+  case "SQLite":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg";
+  case "C#":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg";
+  case "C":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg";
+  case "MD":
+        return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg";
+  
+    default:
+      return "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg";
+  }
+  }
+ 
 
 </script>
 
@@ -7,11 +39,10 @@
   <div class="flex flex-col justify-between p-4 leading-normal">
     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{projectTitle}</h5>
     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{projectDescription}</p>
-    <div class="flex flex-row">
-        {#each svgSource as svgSource}
-        <img class="svgTechnologies " src={svgSources[i]} alt="">
-        <slot/>
-        {/each}
+    <div class="flex flex-row">       
+      {#each svgSources as svgSrc}
+        <img class="svgTechnologies " src={svgSorter(svgSrc)} alt="">      
+      {/each}
     </div>
   </div>
 </a>
