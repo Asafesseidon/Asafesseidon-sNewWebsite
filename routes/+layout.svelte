@@ -12,6 +12,8 @@
 	crossorigin="anonymous"
 	referrerpolicy="no-referrer"
   />
+  	<title>Asafesseidon's Website</title>
+
   </head>
 <Nav />
 {@render children()}
